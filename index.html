@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>git 命令</title>
+    <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
     <div>
@@ -15,6 +16,11 @@
             （Git 1.6.1 及更高版本还允许使用 git diff –staged ，效果是相同的，但更好记些。）
         6.git log 默认不用任何参数的话，git log 会按提交时间列出所有的更新，最近的更新排在最上面。
             每次更新都有一个 SHA-1 校验和、作者的名字 和 电子邮件地址、提交时间，最后缩进一个段落显示提交说明。
+        7.git reset HEAD file_name 使用该命令取消对某文件的暂存 例：git reset HEAD index.css
+        8.git remote 查看当前的远程库
+        9.git fetch fetch 命令只是将远端的数据拉到本地仓库，并不自动合并到当前工作分支，只有当你确实准备好了，才能手工合并。
+        10.git pull 以使用 git pull 命令自动抓取数据下来，然后将远端分支自动合并到本地仓库中当前分支
+        
     </div>
 </body>
 </html>
