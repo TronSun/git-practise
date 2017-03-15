@@ -1,0 +1,41 @@
+[33mcommit b4aab3c2c2a45a0e778b9cfd251f0003ce49f4d2[m
+Author: sunjiankun <sunjiankun@ucfgroup.com>
+Date:   Wed Mar 15 10:52:49 2017 +0800
+
+    'first'
+
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6cc78c9[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m<!doctype html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <title>git 命令</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div>[m
+[32m+[m[32m        1.git init git初始化，在当前目录会出现一个名为.git的目录，所有git需要的数据和资源都存放在这个目录中[m
+[32m+[m[32m        2.git add 使用命令 git add 开始跟踪一个新文件[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+
+[33mcommit 37992472bbdebce9ef9b0e5b33c85e31ba53e39b[m
+Author: Quentin <627736604@qq.com>
+Date:   Wed Mar 15 10:05:34 2017 +0800
+
+    Initial commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1faa80b[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m# git-practise[m
+[32m+[m[32mgit 命令的一些常用操作[m
