@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-<div class="git">
+<div class="git-div">
+    一.基础命令
     1.git init git初始化，在当前目录会出现一个名为.git的目录，所有git需要的数据和资源都存放在这个目录中<br/>
     2.git add 使用命令 git add 开始跟踪一个新文件<br/>
     3.git commit -m "一些提交的说明"  git commit -a -m "" 相当于add + commit<br/>
@@ -26,6 +27,23 @@
     14.git checkout -b [branch-name] 新建分支并切换
     15.git merge [branch-name] 合并分支到当前分支，例:想合并iss分支到master分支，先切换到master分支，然后git merge iss 就可以了
     15.git branch -d [branch-name] 删除分支 例:删除iss分支，切换到master分支然后执行git branch -d iss
+
+    二、解决冲突
+    $ git checkout mywork
+    $ git rebase origin
+    这些命令会把你的"mywork"分支里的每个提交(commit)取消掉，并且把它们临时 保存为补丁(patch)(这些补丁放到".git/rebase"目录中),然后把"mywork"分支更新 为最新的"origin"分支，最后把保存的这些补丁应用到"mywork"分支上。
+    在rebase的过程中，也许会出现冲突(conflict). 在这种情况，Git会停止rebase并会让你去解决 冲突；在解决完冲突后，用"git-add"命令去更新这些内容的索引(index), 然后，你无需执行 git-commit,只要执行:
+    $ git rebase --continue
+    这样git会继续应用(apply)余下的补丁。
+    在任何时候，你可以用--abort参数来终止rebase的行动，并且"mywork" 分支会回到rebase开始前的状态。
+    $ git rebase --abort
+
+    三、
+    比较两个分支的差异 git diff master..test
+
+    比较当前分支与test分支的区别 git diff test
+
+    
 </div>
 </body>
 </html>
