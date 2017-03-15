@@ -9,15 +9,7 @@
 <div>
     1.git init git初始化，在当前目录会出现一个名为.git的目录，所有git需要的数据和资源都存放在这个目录中<br/>
     2.git add 使用命令 git add 开始跟踪一个新文件<br/>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    3.git commit -m '一些提交的说明'<br/>
-=======
     3.git commit -m "一些提交的说明" git commit -a -m "" 相当于add + commit<br/>
->>>>>>> Stashed changes
-=======
-    3.git commit -m "一些提交的说明" git commit -a -m "" 相当于add + commit<br/>
->>>>>>> Stashed changes
     4.git status 查看当前状态<br/>
     5.git diff 单单 git diff 不过是显示还没有暂存起来的改动，而不是这次工作和上次提交之间的差异,
     若要看已经暂存起来的文件和上次提交时的快照之间的差异,可以用git diff –cached 命令，
@@ -31,9 +23,6 @@
     11.git push [remote-name] [branch-name]可以将本地仓库中的数据推送到远程仓库,remote-name:远程地址名称，branch-name:分支名称<br/>
     12.git branch [branch-name] 新建分支
     13.git checkout [branch-name] 切换分支
-
-<<<<<<< Updated upstream
-=======
     二、解决冲突
     $ git checkout mywork
     $ git rebase origin
@@ -55,11 +44,6 @@
     git reset --soft HEAD~1 回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可
                             数字1为上一次提交，数字2为上上一次提交
     git reset –hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </div>
 </body>
 </html>
