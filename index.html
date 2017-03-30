@@ -25,6 +25,7 @@
     12.git branch [branch-name] 新建分支
     13.git checkout [branch-name] 切换分支
     二、解决冲突
+    
     $ git checkout mywork
     $ git rebase origin
     这些命令会把你的"mywork"分支里的每个提交(commit)取消掉，并且把它们临时 保存为补丁(patch)(这些补丁放到".git/rebase"目录中),然后把"mywork"分支更新
@@ -48,10 +49,12 @@
     这样git会继续应用(apply)余下的补丁。
     在任何时候，你可以用--abort参数来终止rebase的行动，并且"mywork" 分支会回到rebase开始前的状态。
     $ git rebase --abort
+
     三、
     比较两个分支的差异 git diff master..test
 
     比较当前分支与test分支的区别 git diff test
+
     四、
     git reset --soft HEAD~1 回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可
                             数字1为上一次提交，数字2为上上一次提交
